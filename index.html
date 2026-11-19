@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ScaleNest | E-commerce Operations Improvement for Retail</title>
+<meta name="description" content="ScaleNest helps South African and African online retailers improve stock accuracy, resolve order exceptions and manage returns and refunds with clear workflows and measurable KPIs.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🪺</text></svg>">
+<meta name="theme-color" content="#071d36">
+<meta property="og:title" content="ScaleNest | E-commerce Operations Improvement">
+<meta property="og:description" content="Protect revenue and improve the customer experience with better stock, order and returns operations.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0b2a4a;--green:#5cb320;--green2:#3f9a1a;--blue:#2f7fb5;--bg:#fff;--bg2:#f3f7fa;--ink:#0d1b2a;--mut:#546579;--line:#e0e7ee;--card:#fff;--hero:#071d36;--sh:0 20px 50px -20px rgba(11,42,74,.25);
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#07121f;--bg2:#0a1a2c;--ink:#eaf1f8;--mut:#9fb2c6;--line:#1c3148;--card:#0e2238;--sh:0 20px 50px -20px #000}}
+:root[data-theme="dark"]{--bg:#07121f;--bg2:#0a1a2c;--ink:#eaf1f8;--mut:#9fb2c6;--line:#1c3148;--card:#0e2238;--sh:0 20px 50px -20px #000}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.65 "Plus Jakarta Sans",system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:Fraunces,Georgia,"Times New Roman",serif;font-weight:600;line-height:1.1;margin:0;letter-spacing:-.01em}
+a{color:inherit;text-decoration:none}svg{display:block;max-width:100%}
+.w{width:min(1160px,100% - 40px);margin-inline:auto}
+.eb{display:inline-flex;gap:8px;align-items:center;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--green2)}
+.eb:before{content:"";width:22px;height:2px;background:var(--green)}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 24px;border-radius:999px;font-weight:600;font-size:15px;border:1.5px solid transparent;transition:.25s;cursor:pointer}
+.b1{background:linear-gradient(135deg,var(--green),var(--green2));color:#fff;box-shadow:0 10px 24px -10px var(--green)}.b1:hover{transform:translateY(-2px)}
+.b2{border-color:rgba(255,255,255,.35);color:#fff}.b2:hover{background:rgba(255,255,255,.1)}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:rgba(7,29,54,.86);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.08)}
+body:before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:#071d36;z-index:21}
+.nv{display:flex;align-items:center;justify-content:space-between;height:68px}
+.lg{display:flex;align-items:center;gap:10px;color:#fff;font-weight:700;font-size:20px;letter-spacing:-.02em}.lg b{color:#7ed348}
+.nv nav{display:flex;gap:28px;align-items:center}.nv nav a{color:#c9d8e8;font-size:14px;font-weight:500}.nv nav a:hover{color:#fff}
+.nv .btn{padding:10px 20px;font-size:14px;color:#fff}
+#mb{display:none;background:none;border:0;color:#fff;font-size:26px}
+.hero{background:radial-gradient(1000px 500px at 85% -10%,#12457a 0,transparent 60%),radial-gradient(700px 400px at 0 100%,#124a2c 0,transparent 60%),var(--hero);color:#fff;overflow:hidden;position:relative}
+.hero:after{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.07) 1px,transparent 1px);background-size:28px 28px;mask-image:linear-gradient(#000,transparent 85%);pointer-events:none}
+.hg{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center;padding:84px 0 96px;position:relative;z-index:1}
+.hero h1{font-size:clamp(38px,5.4vw,66px);margin:18px 0 22px}.hero h1 em{font-style:normal;background:linear-gradient(90deg,#8be04f,#4fc3c8);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p.l{font-size:18px;color:#c3d3e4;max-width:540px;margin:0 0 32px}
+.cta{display:flex;gap:14px;flex-wrap:wrap}
+.tr{display:flex;gap:28px;margin-top:44px;flex-wrap:wrap}.tr div{font-size:13px;color:#9db5cc;border-left:2px solid var(--green);padding-left:12px}.tr b{display:block;color:#fff;font-size:15px}
+.fl{animation:fl 6s ease-in-out infinite}@keyframes fl{50%{transform:translateY(-10px)}}
+section{padding:96px 0}.alt{background:var(--bg2)}
+.hd{max-width:680px;margin-bottom:52px}.hd h2{font-size:clamp(30px,3.8vw,46px);margin:14px 0 14px}.hd p{color:var(--mut);font-size:17px;margin:0}
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:32px;transition:.3s;position:relative}
+.card:hover{transform:translateY(-6px);box-shadow:var(--sh);border-color:var(--green)}
+.ic{width:60px;height:60px;border-radius:16px;background:linear-gradient(135deg,var(--navy),var(--blue));display:grid;place-items:center;margin-bottom:22px}
+.card:nth-child(2) .ic{background:linear-gradient(135deg,var(--blue),var(--green2))}.card:nth-child(3) .ic{background:linear-gradient(135deg,var(--green2),var(--green))}
+.card h3{font-size:24px;margin-bottom:10px}.card>p{color:var(--mut);margin:0 0 18px;font-size:15px}
+.card ul{list-style:none;padding:0;margin:0 0 22px;display:grid;gap:9px;font-size:14.5px}
+.card li{display:flex;gap:10px}.card li:before{content:"";flex:none;width:7px;height:7px;margin-top:9px;border-radius:50%;background:var(--green)}
+.kp{border-top:1px dashed var(--line);padding-top:16px;font-size:13px;color:var(--mut)}.kp b{color:var(--ink);display:block;font-size:11px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:4px}
+.dash{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:center}
+.ck{list-style:none;padding:0;margin:26px 0 0;display:grid;gap:16px}.ck li{display:flex;gap:14px}.ck i{flex:none;width:28px;height:28px;border-radius:50%;background:rgba(92,179,32,.15);color:var(--green2);display:grid;place-items:center;font-style:normal;font-weight:700;font-size:14px}
+.ck b{display:block}.ck span{color:var(--mut);font-size:14.5px}
+.pl{background:var(--card);border:1px solid var(--line);border-radius:26px;padding:18px;box-shadow:var(--sh)}
+.cap{font-size:12px;color:var(--mut);text-align:center;margin-top:12px}
+.st{display:grid;grid-template-columns:repeat(4,1fr);gap:0;position:relative}
+.st:before{content:"";position:absolute;top:27px;left:12%;right:12%;height:2px;background:linear-gradient(90deg,var(--blue),var(--green))}
+.sp{text-align:center;padding:0 14px;position:relative}
+.sp i{width:56px;height:56px;margin:0 auto 18px;border-radius:50%;background:var(--card);border:2px solid var(--green);display:grid;place-items:center;font:600 20px Fraunces,Georgia,serif;font-style:normal;color:var(--navy)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .sp i{color:#fff}}
+.sp h3{font-size:20px;margin-bottom:8px}.sp p{color:var(--mut);font-size:14.5px;margin:0}
+.vs{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.vs .card{padding:26px}.vs h3{font-size:19px}.vs .card>p{margin:0;font-size:14.5px}
+.sc{display:flex;flex-wrap:wrap;gap:12px}.sc span{padding:12px 20px;border:1px solid var(--line);background:var(--card);border-radius:999px;font-weight:600;font-size:14.5px}.sc span:before{content:"●";color:var(--green);margin-right:9px;font-size:10px}
+details{border-bottom:1px solid var(--line);padding:20px 0}summary{cursor:pointer;font-weight:600;font-size:17px;list-style:none;display:flex;justify-content:space-between;gap:16px}
+summary::-webkit-details-marker{display:none}summary:after{content:"+";color:var(--green2);font-size:24px;line-height:1}details[open] summary:after{content:"–"}
+details p{color:var(--mut);margin:12px 0 0;max-width:720px}
+.cb{background:radial-gradient(700px 300px at 100% 0,#1c6f2e 0,transparent 60%),linear-gradient(135deg,#0b2a4a,#071d36);color:#fff;border-radius:32px;padding:64px 48px;display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center}
+.cb h2{font-size:clamp(30px,4vw,48px)}.cb p{color:#c3d3e4;margin:16px 0 0}
+.cl{display:grid;gap:14px}.cl a.btn{justify-content:center}.cl small{color:#9db5cc;text-align:center}
+footer{background:var(--hero);color:#9db5cc;padding:56px 0 40px;font-size:14px}
+.fg{display:flex;justify-content:space-between;gap:32px;flex-wrap:wrap;align-items:flex-start}
+.fg nav{display:flex;gap:24px;flex-wrap:wrap}.fg nav a:hover{color:#fff}
+.cp{border-top:1px solid rgba(255,255,255,.1);margin-top:36px;padding-top:24px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:13px}
+.cmp{overflow-x:auto;padding-bottom:6px}.ct{min-width:820px;display:grid;grid-template-columns:.9fr 1fr 1fr 1.25fr;border:1px solid var(--line);border-radius:24px;overflow:hidden;background:var(--card);box-shadow:var(--sh)}.ct>div{padding:18px 20px;border-top:1px solid var(--line);font-size:14.5px;color:var(--mut)}.ct .h{border-top:0;font-weight:700;color:var(--ink);font-size:15px;background:var(--bg2)}.ct .k{font-weight:600;color:var(--ink)}.ct .sn{background:rgba(92,179,32,.1);color:var(--ink);font-weight:500}.ct .h.sn{background:linear-gradient(135deg,var(--navy),var(--green2));color:#fff}.ct .sn:before{content:"✓ ";color:var(--green2);font-weight:700}.ct .h.sn:before{content:""}
+.so{display:flex;gap:12px;margin-top:18px}.so a{width:42px;height:42px;border-radius:50%;border:1px solid rgba(255,255,255,.25);display:grid;place-items:center;color:#fff;transition:.25s}.so a:hover{background:var(--green2);border-color:var(--green2);transform:translateY(-2px)}.em{color:#fff;font-weight:600;text-align:center;font-size:15px}.em:hover{color:#8be04f}.fm{display:inline-flex;gap:8px;align-items:center;margin-top:14px;color:#fff;font-weight:600}.fm:hover{color:#8be04f}
+.im{border-radius:16px;overflow:hidden;margin:0 0 20px;background:linear-gradient(135deg,#0b2a4a,#12457a)}.im svg{width:100%;height:auto}.sp .im{margin:0 0 -28px}.sp i{position:relative;z-index:1}.st:before{display:none}.lb{fill:var(--ink);font:600 26px "Plus Jakarta Sans",system-ui,sans-serif;text-anchor:middle}.vs .card{text-align:center;padding:34px 20px}.vs h3:before{content:"✓";display:grid;place-items:center;width:48px;height:48px;margin:0 auto 16px;border-radius:50%;background:rgba(92,179,32,.15);color:var(--green2);font:700 22px "Plus Jakarta Sans",sans-serif}
+.rv{opacity:0;transform:translateY(24px);transition:opacity .8s,transform .8s}.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}.fl{animation:none}html{scroll-behavior:auto}}
+@media (max-width:980px){
+.hg,.dash,.cb{grid-template-columns:1fr}.hg{padding:56px 0 64px}.g3{grid-template-columns:1fr}.vs{grid-template-columns:1fr 1fr}.st{grid-template-columns:1fr 1fr;gap:36px 0}.st:before{display:none}section{padding:68px 0}.cb{padding:44px 26px}
+#mb{display:grid;place-items:center;width:44px;height:44px;border:1px solid rgba(255,255,255,.25);border-radius:10px;cursor:pointer;position:relative;z-index:22}
+.nv{position:relative}
+.nv nav{position:absolute;top:68px;left:0;right:0;z-index:21;background:#071d36;flex-direction:column;align-items:stretch;padding:18px 22px 24px;gap:4px;display:none;border:1px solid rgba(255,255,255,.12);border-top:0;border-radius:0 0 16px 16px;box-shadow:0 18px 35px rgba(0,0,0,.3);max-height:calc(100dvh - 84px);overflow-y:auto}
+.nv nav.o{display:flex}
+.nv nav a:not(.btn){padding:12px 8px;border-radius:8px}
+.nv nav a:not(.btn):hover,.nv nav a:not(.btn):focus-visible{background:rgba(255,255,255,.08)}
+.nv nav .btn{margin-top:10px;text-align:center}
+}
+@media (max-width:560px){.vs{grid-template-columns:1fr}.w{width:min(1160px,100% - 28px)}.nv{height:64px}.nv nav{top:64px;left:-14px;right:-14px;padding:16px 20px 22px}.hg{padding:38px 0 48px}.cb{padding:32px 20px}}
+@media (min-width:981px){#mb{display:none!important}.nv nav{position:static!important;display:flex!important;flex-direction:row!important;align-items:center!important;background:transparent!important;padding:0!important;gap:28px!important;border:0!important;box-shadow:none!important;max-height:none!important;overflow:visible!important}.nv nav.o{display:flex!important}}
+
+/* ScaleNest content refinement — brand palette and original logo remain unchanged. */
+.hero-panel{background:rgba(14,42,71,.94);border:1px solid rgba(255,255,255,.13);border-radius:26px;padding:28px;box-shadow:0 24px 55px -28px rgba(0,0,0,.55)}
+.hero-panel-head{display:flex;justify-content:space-between;align-items:center;gap:16px;padding-bottom:18px;border-bottom:1px solid rgba(255,255,255,.12);color:#dce8f4;font-weight:700}
+.hero-panel-head small{color:#9db5cc;font-size:12px;font-weight:500}
+.work-row{display:grid;grid-template-columns:42px 1fr;gap:14px;align-items:center;padding:18px 0;border-bottom:1px solid rgba(255,255,255,.1)}
+.work-row:last-of-type{border-bottom:0;padding-bottom:4px}
+.work-icon{width:42px;height:42px;border-radius:13px;background:rgba(92,179,32,.16);color:#8be04f;display:grid;place-items:center;font-weight:700;font-size:17px}
+.work-row b{display:block;color:#fff;font-size:15px}.work-row span{display:block;color:#9db5cc;font-size:13px;margin-top:3px}
+.hero-panel .cap{color:#9db5cc;text-align:left;margin-top:18px}
+.service-card{padding:22px 22px 26px;display:flex;flex-direction:column}
+.service-photo{width:100%;height:190px;display:block;object-fit:cover;border-radius:15px;margin-bottom:22px;background:var(--bg2)}
+.service-tag{font-size:11px;letter-spacing:.13em;text-transform:uppercase;font-weight:700;color:var(--green2);margin:0 0 8px}
+.service-card h3{font-size:23px;margin:0 0 10px}.service-card .lead{font-size:14.5px;color:var(--mut);margin:0 0 18px}
+.service-card h4{font:700 11px/1.4 "Plus Jakarta Sans",system-ui,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--ink);margin:12px 0 8px}
+.service-card ul{list-style:none;padding:0;margin:0;display:grid;gap:8px;font-size:13.5px;color:var(--mut)}
+.service-card li{display:flex;gap:9px}.service-card li:before{content:"✓";color:var(--green2);font-weight:700;flex:none}
+.service-output{border-top:1px solid var(--line);margin-top:18px;padding-top:13px}
+.service-kpis{margin-top:auto;border-top:1px dashed var(--line);padding-top:15px;margin-top:18px;color:var(--mut);font-size:12.5px}
+.service-kpis b{display:block;color:var(--ink);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:5px}
+.workflow-panel{background:var(--card);border:1px solid var(--line);border-radius:26px;padding:26px;box-shadow:var(--sh)}
+.workflow-panel h3{font-size:22px;margin:0 0 7px}.workflow-panel>p{font-size:13px;color:var(--mut);margin:0 0 18px}
+.workflow-step{display:grid;grid-template-columns:38px 1fr auto;gap:12px;align-items:center;padding:15px 0;border-top:1px solid var(--line)}
+.workflow-step .n{width:34px;height:34px;border-radius:50%;background:rgba(92,179,32,.14);color:var(--green2);display:grid;place-items:center;font-weight:700}
+.workflow-step b{display:block;font-size:14px}.workflow-step span{display:block;color:var(--mut);font-size:12.5px}.workflow-step em{font-style:normal;font-size:11px;font-weight:700;color:var(--blue);background:rgba(47,127,181,.1);border-radius:99px;padding:6px 9px}
+.method-note{margin:34px auto 0;max-width:800px;padding:18px 22px;border-left:3px solid var(--green);background:var(--bg2);border-radius:0 14px 14px 0;color:var(--mut);font-size:14px}
+.st{grid-template-columns:repeat(3,1fr);gap:20px}
+.sp{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:24px;text-align:left;box-shadow:0 8px 24px -22px rgba(11,42,74,.35)}
+.sp i{margin:0 0 16px;width:42px;height:42px;font-size:16px}.sp h3{font-size:21px}.sp p{font-size:13.5px}.sp .stage-output{display:block;margin-top:12px;padding-top:11px;border-top:1px dashed var(--line);font-size:12px;color:var(--mut)}.sp .stage-output b{color:var(--ink)}
+.expect-grid,.stack-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.expect-grid .card,.stack-grid .card{padding:24px}.expect-grid h3,.stack-grid h3{font-size:19px;margin-bottom:8px}.expect-grid p,.stack-grid p{font-size:13.5px;color:var(--mut);margin:0}
+.expect-grid .mini,.stack-grid .mini{width:38px;height:38px;border-radius:12px;display:grid;place-items:center;background:rgba(92,179,32,.14);color:var(--green2);font-weight:800;margin-bottom:14px}
+.section-intro{max-width:760px;color:var(--mut);font-size:16px;margin:-24px 0 34px}
+.sc span{background:var(--card)}
+@media (max-width:980px){.st{grid-template-columns:repeat(2,1fr)}.expect-grid,.stack-grid{grid-template-columns:repeat(2,1fr)}.service-photo{height:230px}}
+@media (max-width:600px){.hero-panel{padding:20px}.st,.expect-grid,.stack-grid{grid-template-columns:1fr}.service-card{padding:18px}.service-photo{height:210px}.workflow-panel{padding:20px}.workflow-step{grid-template-columns:34px 1fr}.workflow-step em{grid-column:2;justify-self:start}.method-note{padding:15px 17px}}
+@media (max-width:420px){.hero h1{font-size:37px}.cta .btn{width:100%;justify-content:center}.tr{gap:15px}.tr div{flex:1 1 40%}}
+.rv{opacity:1;transform:none}.js .rv{opacity:0;transform:translateY(24px)}.js .rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.js .rv{opacity:1;transform:none;transition:none}}
+
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<linearGradient id="lgb" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3b8dc4"/><stop offset=".5" stop-color="#0d4d7a"/><stop offset="1" stop-color="#5cb320"/></linearGradient>
+<symbol id="mk" viewBox="0 0 100 100"><path d="M50 4C26 4 6 23 6 47c0 26 22 46 44 49 22-3 44-23 44-49C94 23 74 4 50 4z" fill="url(#lgb)"/><g fill="#fff"><rect x="30" y="36" width="9" height="14" rx="1.5"/><rect x="43" y="28" width="9" height="22" rx="1.5"/><rect x="56" y="20" width="9" height="30" rx="1.5"/><path d="M28 52h44l3 8H25z" opacity=".95"/><path d="M32 62h36v16a5 5 0 0 1-5 5H37a5 5 0 0 1-5-5z" fill="none" stroke="#fff" stroke-width="3"/><path d="M42 67h3l2 8h12l2-6H46" fill="none" stroke="#fff" stroke-width="2.4" stroke-linejoin="round"/></g><path d="M22 58C44 56 66 44 80 22l-5 0 12-12 2 17-4-5C70 48 46 62 22 58z" fill="#8be04f"/></symbol>
+<symbol id="ig" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.3" cy="6.7" r="1.2" fill="currentColor"/></symbol><symbol id="tt" viewBox="0 0 24 24"><path d="M15 3v11.2a4.2 4.2 0 1 1-4.2-4.2M15 3c.3 2.5 2 4.2 4.5 4.4" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></symbol><symbol id="ml" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m4 7.5 8 6 8-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol></defs></svg>
+
+<header><div class="w nv">
+<a href="#top" class="lg" aria-label="ScaleNest home"><svg width="38" height="38"><use href="#mk"/></svg><span>Scale<b>Nest</b></span></a>
+<button id="mb" aria-label="Open navigation menu" aria-controls="nav" aria-expanded="false">☰</button>
+<nav id="nav"><a href="#services">Services</a><a href="#method">Method</a><a href="#why">Why ScaleNest</a><a href="#difference">How we work</a><a href="#sectors">Sectors</a><a href="#faq">FAQ</a><a class="btn b1" href="#contact">Book a review</a></nav>
+</div></header>
+
+<main id="top">
+<div class="hero"><div class="w hg">
+<div>
+<span class="eb" style="color:#8be04f">E-commerce operations improvement · South Africa &amp; Africa</span>
+<h1>Make every stock unit, order and return <em>accountable.</em></h1>
+<p class="l">ScaleNest helps online retailers find and fix the operational gaps that create stock discrepancies, delayed orders and unresolved returns — with clear ownership, practical workflows and measurable KPIs.</p>
+<div class="cta"><a class="btn b1" href="#contact">Book a free operations review →</a><a class="btn b2" href="#services">Explore our services</a></div>
+<div class="tr"><div><b>3 focused workstreams</b>Stock · orders · returns</div><div><b>Clear ownership</b>Cases, priorities and SLAs</div><div><b>Existing systems first</b>Practical, tool-agnostic delivery</div></div>
+</div>
+<div class="fl"><div class="hero-panel" role="img" aria-label="Illustrative operations workflow showing stock visibility, order exception handling and returns case management; no customer data or performance figures are shown.">
+<div class="hero-panel-head"><span>Operations control</span><small>Illustrative workflow</small></div>
+<div class="work-row"><div class="work-icon">S</div><div><b>Stock visibility</b><span>Variance flagged · owner assigned · count reviewed</span></div></div>
+<div class="work-row"><div class="work-icon">O</div><div><b>Order exceptions</b><span>Issue prioritised · SLA visible · customer updated</span></div></div>
+<div class="work-row"><div class="work-icon">R</div><div><b>Returns &amp; refunds</b><span>Inspection · decision · refund or recovery action</span></div></div>
+<div class="cap">A sample of the control and accountability ScaleNest can help design around your operation.</div>
+</div></div>
+</div></div>
+
+<section style="padding:56px 0 0"><div class="w"><div class="cmp rv"><svg viewBox="0 -30 1000 250" style="min-width:700px;width:100%" role="img" aria-label="Stock, order, delivery, return and refund flow"><defs><linearGradient id="og" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b2a4a"/><stop offset="1" stop-color="#3f9a1a"/></linearGradient></defs><g stroke="#5cb320" stroke-width="4" stroke-dasharray="2 10" stroke-linecap="round"><path d="M150 90H250M350 90H450M550 90H650M750 90H850"/></g><path d="M700 40C640 -40 160 -40 104 36" stroke="#ffc542" stroke-width="4" fill="none" stroke-dasharray="6 8"/><path d="m96 22 10 20-22 2z" fill="#ffc542"/><g fill="url(#og)"><circle cx="100" cy="90" r="48"/><circle cx="300" cy="90" r="48"/><circle cx="500" cy="90" r="48"/><circle cx="700" cy="90" r="48"/><circle cx="900" cy="90" r="48"/></g><g stroke="#fff" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"><path transform="translate(100 90)" d="M-20-9 0-20 20-9v20L0 22-20 11zM-20-9 0 2 20-9M0 2v20"/><path transform="translate(300 90)" d="M-15-18h30v36h-30zM-8-7h16M-8 2h16M-8 11h9"/><path transform="translate(500 90)" d="M-24-13h28v24h-28zM4-5h13l8 8v8H4z"/><circle cx="488" cy="104" r="4"/><circle cx="514" cy="104" r="4"/><path transform="translate(700 90)" d="M-18 0a18 18 0 0 1 31-12M18 0a18 18 0 0 1-31 12M13-20v9h-9M-13 20v-9h9"/><circle cx="900" cy="90" r="20"/></g><text x="900" y="101" fill="#fff" font-size="30" font-weight="700" text-anchor="middle" font-family="sans-serif">R</text><g class="lb"><text x="100" y="178" class="lb">Stock</text><text x="300" y="178" class="lb">Order</text><text x="500" y="178" class="lb">Delivery</text><text x="700" y="178" class="lb">Return</text><text x="900" y="178" class="lb">Refund</text></g></svg></div></div></section>
+
+<section id="services"><div class="w">
+<div class="hd rv"><span class="eb">What we improve</span><h2>Three operational workstreams that protect the customer promise.</h2><p>Each engagement starts with the problem in your operation, then builds the controls, ownership and reporting needed to manage it.</p></div>
+<div class="g3">
+<article class="card service-card rv">
+<img class="service-photo" src="assets/stock-inventory-scanning.jpg" alt="Warehouse team member scanning boxed inventory while checking stock information on a tablet" loading="lazy" decoding="async">
+<div class="service-tag">01 · Inventory control</div><h3>Stock Accuracy &amp; Inventory Visibility</h3>
+<p class="lead">Reduce the gap between what your systems say is available and what your team can actually pick, sell and fulfil.</p>
+<h4>Typical work</h4><ul><li>Reconcile physical, system and sales-channel stock</li><li>Set up cycle counts and variance investigation</li><li>Clarify adjustment approvals and low-stock alerts</li><li>Assign ownership for recurring discrepancies</li></ul>
+<div class="service-output"><h4>What you receive</h4><ul><li>SKU / location variance register and root-cause view</li><li>Practical stock-control steps and review cadence</li><li>Manager-ready visibility of exceptions and value at risk</li></ul></div>
+<div class="service-kpis"><b>Example measures</b>Inventory record accuracy · stock variance value · stock-out and oversell cancellations</div>
+</article>
+<article class="card service-card rv">
+<img class="service-photo" src="assets/order-exception-review.jpg" alt="Fulfilment team member checking a parcel label at a packing station beside a laptop" loading="lazy" decoding="async">
+<div class="service-tag">02 · Fulfilment control</div><h3>Order Exception Management</h3>
+<p class="lead">Give delayed, incomplete, misrouted or at-risk orders a visible route to resolution before they become avoidable customer frustration.</p>
+<h4>Typical work</h4><ul><li>Identify payment, picking, address, stock and courier exceptions</li><li>Build a prioritised queue with owner, due time and status</li><li>Define escalation and customer-update steps</li><li>Track repeat causes and ageing unresolved cases</li></ul>
+<div class="service-output"><h4>What you receive</h4><ul><li>Exception categories and resolution workflow</li><li>Ownership and service-level matrix</li><li>Backlog view with reasons, age and next action</li></ul></div>
+<div class="service-kpis"><b>Example measures</b>Exceptions per 1,000 orders · time to resolution · late / cancelled orders · repeat contacts</div>
+</article>
+<article class="card service-card rv">
+<img class="service-photo" src="assets/returns-product-inspection.jpg" alt="Returns team inspecting headphones and recording a product condition check on a tablet" loading="lazy" decoding="async">
+<div class="service-tag">03 · Returns control</div><h3>Returns &amp; Refunds Case Management</h3>
+<p class="lead">Make every return traceable from request and inspection through to refund, replacement, exchange or stock recovery.</p>
+<h4>Typical work</h4><ul><li>Standardise return reasons, evidence and case statuses</li><li>Set inspection, disposition and refund decision steps</li><li>Define approval thresholds and customer communication</li><li>Identify items suitable for resale or supplier claims</li></ul>
+<div class="service-output"><h4>What you receive</h4><ul><li>Returns reason-code and case workflow</li><li>Refund approval and escalation rules</li><li>Visibility of open cases, cycle time and recoverable value</li></ul></div>
+<div class="service-kpis"><b>Example measures</b>Refund cycle time · return rate by reason · value recovered · repeat contacts</div>
+</article>
+</div></div></section>
+
+<section class="alt"><div class="w dash">
+<div class="rv"><span class="eb">Visibility you can act on</span><h2 style="font-size:clamp(30px,3.8vw,46px);margin:14px 0 0">A dashboard is only useful when someone owns the next action.</h2>
+<ul class="ck"><li><i>1</i><div><b>One usable operating view</b><span>Bring the relevant stock, order and returns signals together without creating another report nobody checks.</span></div></li><li><i>2</i><div><b>Every case has a next step</b><span>Make the owner, priority, due time, status and escalation path visible to the people doing the work.</span></div></li><li><i>3</i><div><b>Review causes, not just totals</b><span>Use a regular review to understand repeat issues, customer impact and rand value where the data supports it.</span></div></li></ul></div>
+<div class="rv"><div class="workflow-panel" role="img" aria-label="Illustrative three-step case workflow: flag an issue, assign an owner and resolve with a recorded outcome.">
+<h3>From issue to resolution</h3><p>A simple operating pattern, adapted to your current tools.</p>
+<div class="workflow-step"><div class="n">1</div><div><b>Flag the issue</b><span>Stock variance, delayed order or return request</span></div><em>Visible</em></div>
+<div class="workflow-step"><div class="n">2</div><div><b>Assign responsibility</b><span>Owner, priority, due time and escalation</span></div><em>Owned</em></div>
+<div class="workflow-step"><div class="n">3</div><div><b>Close the loop</b><span>Action taken, customer update and reason recorded</span></div><em>Resolved</em></div>
+<div class="cap">Illustrative workflow — not a live system or customer dashboard.</div>
+</div></div>
+</div></section>
+
+<section id="method"><div class="w">
+<div class="hd rv" style="margin-inline:auto;text-align:center"><span class="eb">Our method</span><h2>From operational discovery to a measured improvement.</h2><p>A staged engagement keeps the work practical, the scope clear and the decision to scale evidence-led.</p></div>
+<div class="st">
+<div class="sp rv"><i>1</i><h3>Discovery</h3><p>Understand your business model, operating teams, systems and the issue with the greatest impact.</p><span class="stage-output"><b>You receive:</b> agreed problem statement, stakeholders and discovery scope.</span></div>
+<div class="sp rv"><i>2</i><h3>Operational Audit</h3><p>Trace the current workflow, review available data and identify control gaps, recurring causes and exposure.</p><span class="stage-output"><b>You receive:</b> current-state map, baseline and prioritised findings.</span></div>
+<div class="sp rv"><i>3</i><h3>Solution Design</h3><p>Design the process, ownership, exception rules, reporting and any system changes needed.</p><span class="stage-output"><b>You receive:</b> future-state workflow, roles, measures and implementation plan.</span></div>
+<div class="sp rv"><i>4</i><h3>Pilot</h3><p>Test the agreed change with a defined team, product group, order flow or returns category.</p><span class="stage-output"><b>You receive:</b> working pilot, team guidance and issue log.</span></div>
+<div class="sp rv"><i>5</i><h3>Measurement</h3><p>Compare the pilot with the agreed baseline, review exceptions and document what changed.</p><span class="stage-output"><b>You receive:</b> KPI review, lessons and scale recommendation.</span></div>
+<div class="sp rv"><i>6</i><h3>Scale &amp; Optimise</h3><p>Extend what works, refine the controls and establish an ongoing review rhythm if required.</p><span class="stage-output"><b>You receive:</b> rollout plan, operating ownership and improvement cadence.</span></div>
+</div>
+<div class="method-note rv"><b>Existing systems first.</b> ScaleNest starts with the platforms, spreadsheets, warehouse tools, courier portals and support workflows you already use. Integrations or custom development are recommended only when a defined process gap justifies them.</div>
+</div></section>
+
+<section id="why" class="alt"><div class="w">
+<div class="hd rv"><span class="eb">Why ScaleNest</span><h2>Focused on the operational details that affect margin and customer trust.</h2><p>We work with the people responsible for stock, fulfilment and customer experience to turn recurring friction into clear, manageable work.</p></div>
+<div class="expect-grid">
+<div class="card rv"><div class="mini">01</div><h3>Focused scope</h3><p>Start with a defined operational problem instead of a broad transformation programme.</p></div>
+<div class="card rv"><div class="mini">02</div><h3>Existing systems first</h3><p>Make better use of your current tools before introducing new platforms or development.</p></div>
+<div class="card rv"><div class="mini">03</div><h3>Clear ownership</h3><p>Document who acts, when to escalate and what a completed case looks like.</p></div>
+<div class="card rv"><div class="mini">04</div><h3>Evidence-led decisions</h3><p>Agree a baseline and measures up front. Report actual findings, not assumed savings.</p></div>
+</div></div></section>
+
+<section id="difference"><div class="w">
+<div class="hd rv"><span class="eb">How we work with your stack</span><h2>Improve the operation without starting with a platform replacement.</h2><p>Retail operations rarely live in one system. ScaleNest maps the real flow across the tools and teams already involved, then recommends the lightest practical change that closes the gap.</p></div>
+<div class="stack-grid">
+<div class="card rv"><div class="mini">A</div><h3>Map what is already there</h3><p>Commerce platform, ERP, OMS, WMS, courier portals, customer support tools and spreadsheets — where relevant to the process.</p></div>
+<div class="card rv"><div class="mini">B</div><h3>Connect the workflow</h3><p>Clarify hand-offs, decision rights, data owners, exception categories and customer communication.</p></div>
+<div class="card rv"><div class="mini">C</div><h3>Change only what is needed</h3><p>Improve the process first. Add reporting, integrations or custom development only where the audit shows a real need.</p></div>
+<div class="card rv"><div class="mini">D</div><h3>Leave the team with control</h3><p>Provide usable procedures, role clarity, measures and a review rhythm so the improvement can be sustained.</p></div>
+</div></div></section>
+
+<section id="sectors" class="alt"><div class="w">
+<div class="hd rv"><span class="eb">Who we serve</span><h2>Built around the realities of online retail.</h2><p>We focus on retailers where accurate availability, dependable fulfilment and a well-managed returns journey shape the customer experience.</p></div>
+<div class="sc rv"><span>South African online retailers</span><span>African e-commerce teams</span><span>Fashion &amp; apparel</span><span>Beauty &amp; personal care</span><span>Consumer electronics</span><span>Omnichannel retail</span></div>
+</div></section>
+
+<section id="faq"><div class="w" style="max-width:860px">
+<div class="hd rv"><span class="eb">FAQ</span><h2>Straight answers.</h2></div>
+<details class="rv"><summary>Are you a software company?</summary><p>No. ScaleNest is an e-commerce operations improvement and implementation partner. We help define and improve the process, ownership and reporting. Technology is used where it supports the agreed operating change.</p></details>
+<details class="rv"><summary>Do we have to replace our current systems?</summary><p>No. We begin with the tools and workflows you already use. If an integration or custom development is genuinely needed, we explain the gap and options before it becomes part of the scope.</p></details>
+<details class="rv"><summary>What happens after the first conversation?</summary><p>We clarify the operational problem and decide whether a defined discovery or audit is appropriate. You receive a proposed scope, deliverables, timing and fee before implementation work begins.</p></details>
+<details class="rv"><summary>How do you measure success?</summary><p>We agree a baseline and relevant KPIs before a pilot. Measures may include stock variance, oversell cancellations, exception resolution time, refund cycle time or recoverable value. Results are reported from the data available; we do not promise a number before understanding the operation.</p></details>
+<details class="rv"><summary>What would our team need to provide?</summary><p>Typically, access to the relevant process owners, a walkthrough of the current workflow and agreed samples of stock, order or returns data. Any system access and data handling are agreed with you before work starts.</p></details>
+<details class="rv"><summary>Can you work alongside our existing team?</summary><p>Yes. The aim is to make responsibilities and workflows clearer for the people doing the work, not to create a parallel operation. We involve the relevant retail, fulfilment and customer experience stakeholders throughout the engagement.</p></details>
+</div></section>
+
+<section id="contact"><div class="w"><div class="cb rv">
+<div><span class="eb" style="color:#8be04f">Let’s talk</span><h2 style="margin-top:14px">Let’s identify the operational friction you can fix first.</h2><p>Book a free 30-minute operations review. We’ll discuss where stock, orders or returns are creating friction and whether a focused discovery engagement makes sense.</p></div>
+<div class="cl"><a class="btn b1" href="mailto:hello@scalenest.co.za?subject=Operations%20review%20request">Book an operations review →</a><a class="btn b2" href="https://scalenest.co.za">scalenest.co.za</a><a class="em" href="mailto:hello@scalenest.co.za">hello@scalenest.co.za</a><div class="so" style="justify-content:center;margin-top:2px"><a href="https://www.instagram.com/scalenest56" target="_blank" rel="noopener" aria-label="ScaleNest on Instagram"><svg width="20" height="20"><use href="#ig"/></svg></a><a href="https://www.tiktok.com/@scalenest1" target="_blank" rel="noopener" aria-label="ScaleNest on TikTok"><svg width="20" height="20"><use href="#tt"/></svg></a><a href="mailto:hello@scalenest.co.za" aria-label="Email ScaleNest"><svg width="20" height="20"><use href="#ml"/></svg></a></div></div>
+</div></div></section>
+</main>
+
+<footer><div class="w">
+<div class="fg"><div><div class="lg" style="margin-bottom:12px"><svg width="34" height="34"><use href="#mk"/></svg><span>Scale<b>Nest</b></span></div>Build. Sell. Scale.<br>E-commerce operations improvement for South African and African online retailers.<br><a class="fm" href="mailto:hello@scalenest.co.za"><svg width="18" height="18"><use href="#ml"/></svg>hello@scalenest.co.za</a><div class="so"><a href="https://www.instagram.com/scalenest56" target="_blank" rel="noopener" aria-label="ScaleNest on Instagram"><svg width="20" height="20"><use href="#ig"/></svg></a><a href="https://www.tiktok.com/@scalenest1" target="_blank" rel="noopener" aria-label="ScaleNest on TikTok"><svg width="20" height="20"><use href="#tt"/></svg></a></div></div>
+<nav><a href="#services">Services</a><a href="#method">Method</a><a href="#why">Why ScaleNest</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></nav></div>
+<div class="cp"><span>© <span id="yr">2026</span> ScaleNest. All rights reserved.</span><span>Stock accuracy · Order exceptions · Returns &amp; refunds</span></div>
+</div></footer>
+
+<script>
+(function(){
+document.body.classList.add('js');
+var mb=document.getElementById('mb'),nv=document.getElementById('nav');
+function closeMenu(){nv.classList.remove('o');mb.setAttribute('aria-expanded','false');mb.setAttribute('aria-label','Open navigation menu');mb.textContent='☰'}
+function openMenu(){nv.classList.add('o');mb.setAttribute('aria-expanded','true');mb.setAttribute('aria-label','Close navigation menu');mb.textContent='×'}
+mb.addEventListener('click',function(){nv.classList.contains('o')?closeMenu():openMenu()});
+nv.querySelectorAll('a').forEach(function(a){a.addEventListener('click',closeMenu)});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&nv.classList.contains('o')){closeMenu();mb.focus()}});
+document.addEventListener('click',function(e){if(nv.classList.contains('o')&&!nv.contains(e.target)&&!mb.contains(e.target))closeMenu()});
+window.addEventListener('resize',function(){if(window.innerWidth>980)closeMenu()});
+document.getElementById('yr').textContent=new Date().getFullYear();
+var r=document.querySelectorAll('.rv');
+if('IntersectionObserver' in window){var io=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:.12});r.forEach(function(el){io.observe(el)})}else{r.forEach(function(el){el.classList.add('in')})}
+})();
+</script>
+</body>
+</html>
